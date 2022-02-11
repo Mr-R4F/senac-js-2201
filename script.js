@@ -1,7 +1,7 @@
-let x = 7;
-let y = 9;
+let x = parseInt(prompt("Digite um Nº"));
+let y = parseInt(prompt("Digite um Nº"));
 
-if (x == y)
-   document.write("É igual");
+if (x % y == 0)
+   document.write("É par");
 else
-   document.write("É diferente");
+   document.write("É ímpar");
