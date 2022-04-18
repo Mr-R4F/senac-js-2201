@@ -1,4 +1,5 @@
-/*
+/* anotações
+
 // De objeto JSON para string
 
 const OBJ = 
@@ -25,7 +26,7 @@ const IDADE = sessionStorage.getItem('idade','37'); //pega item da session
 console.log(IDADE);
 */
 
-// usuario digita e aparece no local
+// usuario digita e aparece no local storage.
 /*
 document.querySelector('input.btn').addEventListener('click', function(evt)
 {
@@ -65,37 +66,48 @@ document.querySelector('input.btn').addEventListener('click', function(evt)
 });
 */
 
-document.querySelector('input.btn').addEventListener('click', function(e)
+//De objeto JSON para string
+const OBJ = {nome: "Bono", idade: 37};
+
+console.log( JSON.stringify(OBJ) );
+
+//De string para objeto JSON
+const STR = '{"nome": "Bono", "idade": 37}';
+
+console.log( JSON.parse(STR) );
+
+localStorage.setItem('nome', 'Bono');
+
+const NOME = localStorage.getItem('nome');
+
+console.log(NOME);
+
+sessionStorage.setItem('idade', '37');
+
+const IDADE = sessionStorage.getItem('idade');
+
+console.log(IDADE);
+
+document.querySelector('input.btn').addEventListener('click', function(evt)
 {
-    e.preventDefault();
 
-    const BTN = document.querySelector('input.btn')
-    BTN.addEventListener('click', function(evento){
-    evento.preventDefault()
+    evt.preventDefault();
 
-    const TEXTO_USER = '{"tarefa": "' + document.querySelector('input#task').value + '"}'
+    const TAREFA = document.querySelector('#task').value;
 
-    console.log(JSON.parse(TEXTO_USER));
+    document.querySelector('#task').value = '';
 
-    localStorage.setItem('tarefa', TEXTO_USER);
+    localStorage.setItem('tarefa', TAREFA);
 });
 
-const TRF = localStorage.getItem('tarefa')
-
-if(TRF)
-    document.querySelector('#exibe').innerText = TRF
-});
-
-/*
 const TRF = localStorage.getItem('tarefa');
 
-if (TRF)
+if(TRF){
     document.querySelector('#exibe').innerText = TRF;
-*/
+}
+
 //classes - 'saco' de var e funções. 
 //classe - definição do obj
 //obj - quando monta as especificações
 //metodos.
-//objeto - saco.
-//
 //atrb. var de uma class.

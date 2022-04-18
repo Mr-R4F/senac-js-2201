@@ -23,11 +23,10 @@ document.body.addEventListener('click', function(evt)
 
 document.body.addEventListener('click', function(evt)
 {
+
     evt.preventDefault();
 
-    if (evt.target.parentElement.classList.contains('delete-item') === true)
-    {
-        evt.target.parentElement.parentElement.remove(); //remove o pai do pai (i > a > li).
-    }
+    if(e.target.parentElement.classList.contains('delete-item') === true)
+        e.target.parentElement.parentElement.remove();  //remove o pai do pai (i > [a > li]).   
 });
 
