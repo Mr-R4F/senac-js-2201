@@ -1,4 +1,4 @@
-/*
+
 //cria gráficos de linhas
 
 new Morris.Line({
@@ -19,7 +19,7 @@ new Morris.Line({
     
 labels: ['Value']
 });
-
+/*
 //Gráfico de barra
 new Morris.Bar({
     element: 'grafico2',
