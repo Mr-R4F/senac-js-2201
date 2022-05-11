@@ -19,6 +19,7 @@ new Morris.Line({
     
 labels: ['Value']
 });
+
 /*
 //Gráfico de barra
 new Morris.Bar({
