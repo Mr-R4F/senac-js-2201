@@ -1,0 +1,163 @@
+/* --- */
+
+body {
+    background-color: rgb(97, 97, 97);
+    margin: 10%;
+    font-family: 'Roboto', sans-serif;
+    background: #0f0c29;  /* P/ navegadores antigos */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, input {
+    font-size: x-large;
+}
+
+hr {
+    margin-top: 20%;
+    border-color: black;
+}
+
+/* Container */
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.painel-imc, #h1, #conteudo-calc, .container-aviso {
+    background-color: rgba(228, 237, 253, 0.931);
+    border-radius: 15px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.335);
+}
+
+.painel-imc {
+    margin-right: 5%;
+    padding: 20px;
+    width: 250px;
+}
+
+#conteudo-painel div{
+    background-color: rgba(94, 152, 251, 0.472);
+    border-radius: 15px;
+    box-sizing: content-box;
+    height: 40px;
+    padding: 10px 2px;
+    text-align: center;
+    font-size: xx-large;
+} 
+
+#h1 {
+    padding: .1px;
+}
+
+#conteudo-calc {
+    margin-top: 5%;
+    padding: 30px;
+}
+
+#conteudo-painel, #conteudo-calc {
+    height: 320px;
+}
+
+/* Botões */
+
+#botoes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 28%;
+}
+
+#botoes button:hover {
+    background-color: rgba(123, 123, 123, 0.561);
+    color: black;
+    transform: scale(115%);
+    transition: ease-in-out .4s;
+    cursor: pointer;
+}
+
+#botoes button {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    box-sizing: content-box;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: transparent;
+    transform: scale(100%);
+    transition: .4s;
+    font-size: large;
+    cursor: pointer;
+}
+
+/* Aviso */
+
+.container-aviso {
+    background-color: rgba(249, 140, 140, 0.931);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    box-sizing: content-box;
+    width: 400px;
+    text-align: center;
+}
+
+.container-aviso #aviso {
+    padding: 10px;
+}
+
+/* float */
+
+.float {
+    position: relative;
+    padding-top: 5px;
+}
+  
+.float input {
+    background-color: transparent;
+    height: 40px;
+    outline: none;
+    border: 0px transparent;
+    border-bottom: 1px solid black;
+    transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    margin-top: 8%;
+}
+
+.float input::placeholder {
+    color:transparent;
+}
+
+.float label {
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 38px;
+    font-size: x-large;
+    transition: all .2s ease-out;
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    transform: scale(1);
+    color: rgba(48, 48, 57, 0.789);
+}
+
+.float input:focus + label, 
+.float input:not(:placeholder-shown) + label {
+    font-size: x-large;
+    left: -11px;
+    transform: scale(.8);
+    margin-top: 0px;
+    color: rgba(48, 48, 57, 0.42);
+}
+
+.float input::-webkit-inner-spin-button, 
+.float input::-webkit-outer-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+}
