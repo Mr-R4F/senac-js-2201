@@ -24,11 +24,4 @@ $(document).ready(function () {
             alert("result: " , status , " " , error , " " , xhr.statusText);
         }
     })
-
-
-
-
-
-
-
 })
