@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="estilo.css" type="text/css">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&family=Roboto:wght@500&display=swap');
+            </style>
+        <title>Preveja sua idade</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="conteudo">
+                <div id="titulo">
+                    <h1>Preveja sua Idade</h1>
+                </div>
+                <div id="painel">
+                        <div class="float">
+                            <input type="text" id="nome"   placeholder=" " autocomplete="off">
+                            <label for="nome">Digite seu nome</label>
+                        </div>
+                    <button id="btn">Consultar</button>
+                </div>
+                <div id="resultado"></div>
+                <div id="aviso" hidden></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
