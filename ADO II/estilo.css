@@ -1,0 +1,134 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin-left: 38%;
+    margin-right: 50%;
+    margin-top: 10%;
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Conteúdo */
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    width: 450px;
+}
+
+h1, #resultado {
+    text-align: center;
+}
+
+h1 {
+    padding: 10px;
+}
+
+h1, #painel, #resultado, #aviso {
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 5px 5px 20px black;
+}
+
+/* Painel */
+
+#painel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+button {
+    box-sizing: content-box;
+    width: fit-content;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    border-radius: 18px;
+    border: 0px;
+    padding: 10px;
+    cursor: pointer;
+    transform: scale(100%);
+    transition: .4s;
+    color: white;
+    background-color: rgb(28, 28, 28);
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(110%);
+    transition: .4s ease-in-out;
+    color: black;
+    background-color: rgb(192, 192, 192);
+}
+
+#resultado {
+    font-size: x-large;
+    margin-top: 12%;
+    height: 30px;
+    padding: 5px;
+}
+
+/* float */
+
+.float {
+    position: relative;
+    padding-top: 10px;
+}
+  
+.float input {
+    background-color: transparent;
+    height: 40px;
+    width: 415px;
+    font-size: x-large;
+    outline: none;
+    border: 0px transparent;
+    border-bottom: 1px solid black;
+    transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    margin-top: 3%;
+}
+
+.float input::placeholder {
+    color:transparent;
+}
+
+.float label {
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-left: 4px;
+    margin-top: 25px;
+    font-size: x-large;
+    transition: all .2s ease-out;
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    transform: scale(1);
+    color: rgba(48, 48, 57, 0.789);
+}
+
+.float input:focus + label, 
+.float input:not(:placeholder-shown) + label {
+    font-size: x-large;
+    left: -20px;
+    transform: scale(.8);
+    margin-top: 0px;
+    color: rgba(48, 48, 57, 0.42);
+}
+
+/* Aviso */
+
+#aviso {
+    margin-top: 20%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(255, 158, 158);
+}
