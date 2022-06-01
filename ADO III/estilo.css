@@ -1,0 +1,174 @@
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+    zoom: 100%;
+    margin-left: 40%;
+    margin-right: 50%;
+    margin-top: 8%;
+    background: #EB3349;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F45C43, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    display: flex;
+}
+
+#opcoes {
+    box-sizing: content-box;
+    height: fit-content;
+}
+
+#painel, #resultado {
+    box-sizing: content-box;
+    width: auto;
+}
+
+#painel, #resultado, #curiosidade, #aviso {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.335);
+}
+
+#curiosidade, #painel, #resultado, #aviso {
+    border-radius: 15px;
+}
+
+#painel, #curiosidade, #resultado {
+    background-color: rgba(228, 237, 253, 0.931);
+}
+
+#painel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+#curiosidade {
+    padding: 1px 10px;
+    font-size: small;
+    text-align: center;
+}
+
+#conteudo-painel {
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    width: 400px;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 8%;
+}
+
+#opcoes #numeros {
+    box-sizing: content-box;
+    height: 40px;
+    width: fit-content;
+    margin-left: 10%;
+    margin-top: 35%;
+    font-size: large;
+    outline: none;
+    cursor: pointer;
+    border: 0px transparent;
+    border-bottom: 1px solid black;
+    border-radius: 2px;
+    background-color: transparent;
+}
+
+#painel #btn {
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    box-sizing: content-box;
+    width: 100px;
+    height: 30px;
+    border-color: transparent;
+    font-size: medium;
+    transform: scale(1);
+    transition: .4s;
+    background-color: rgb(180, 180, 180);
+    cursor: pointer;
+}
+
+#painel #btn:hover {
+    transform: scale(1.2);
+    transition: ease-in-out .4s;
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+#resultado {
+    margin-top: 10%;
+    box-sizing: content-box;
+    height: 100px;
+    padding: 25px;
+    text-align: center;
+    font-size: large;
+}
+
+/* float */
+
+.float {
+    position: relative;
+    padding-top: 22px;
+}
+  
+.float input {
+    background-color: transparent;
+    height: 40px;
+    width: 220px;
+    margin-left: -4.5%;
+    font-size: x-large;
+    outline: none;
+    border: 0px transparent;
+    border-bottom: 1px solid black;
+    transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    margin-top: 8%;
+}
+
+.float input::placeholder {
+    color:transparent;
+}
+
+.float label {
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-left: -8px;
+    margin-top: 45px;
+    font-size: x-large;
+    transition: all .2s ease-out;
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    transform: scale(1);
+    color: rgba(48, 48, 57, 0.789);
+}
+
+.float input:focus + label, 
+.float input:not(:placeholder-shown) + label {
+    font-size: x-large;
+    left: -20px;
+    transform: scale(.8);
+    margin-top: 0px;
+    color: rgba(48, 48, 57, 0.42);
+}
+
+.float input::-webkit-inner-spin-button, 
+.float input::-webkit-outer-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* aviso */
+
+#aviso {
+    margin-top: 20%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(255, 158, 158);
+}

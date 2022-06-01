@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="estilo.css" type="text/css">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&family=Roboto:wght@500&display=swap');
+            </style>
+        <title>Curiosidades sobre números</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="conteudo">
+                <div id="curiosidade">
+                    <h1>Curiosidades sobre números</h1>
+                </div>
+                <div id="painel">
+                    <div id="conteudo-painel">
+                        <div id="digitar">
+                            <div class="float">
+                                <input type="number" id="num" placeholder=" " autocomplete="off">
+                                <label for="num">Digite um número</label>
+                            </div>
+                        </div>
+                        <div id="opcoes">
+                            <select id="numeros">
+                                <option value="escolha" selected disabled>Escolha</option>
+                                <option value="trivia" id="trivia">Trivia</option>
+                                <option value="ano" id="ano">Ano</option>
+                                <option value="data" id="data">Data</option>
+                                <option value="matematica" id="mat">Matemática</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="btn">OK</button>
+                </div>
+                <div id="resultado"></div>
+                <div id="aviso" hidden></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
